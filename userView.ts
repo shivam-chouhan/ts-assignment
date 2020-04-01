@@ -1,4 +1,4 @@
-import { DataType } from "./interface.js";
+import { DataTypeOfUser } from "./interface.js";
 import { Role } from "./enum.js";
 import {dataFetch} from "./DataFetch.js";
 import { addEvent,removeEvent} from "./ButtonsAction.js";
@@ -7,7 +7,7 @@ import { error } from "./showError.js";
 
 
 export class UserTable{
-    getUsers(users:DataType[]){
+    getUsers(users:DataTypeOfUser[]){
        document.getElementById("loadData")!.style.display="none";
        document.getElementById("refreshData")!.style.display="block";
        document.getElementById("table")!.style.visibility="visible";
